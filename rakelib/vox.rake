@@ -111,5 +111,4 @@ task 'release:prepare' do
   ver = Version.load_from_changelog.next!.to_s
   puts "Preparing release #{ver}"
   Rake::Task[:changelog].invoke(ver)
-  Rake::Task['release:changelog_components'].invoke(ver)
 end
