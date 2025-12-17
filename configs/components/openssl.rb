@@ -1,9 +1,8 @@
 component 'openssl' do |pkg, settings, platform|
-  pkg.version '3.0.9'
-  pkg.sha256sum 'eb1ab04781474360f77c318ab89d8c5a03abc38e63d65a603cabbf1b00a1dc90'
+  pkg.version '3.0.18'
+  pkg.sha256sum 'd80c34f5cf902dccf1f1b5df5ebb86d0392e37049e5d73df1b3abae72e4ffe8b'
 
   pkg.url "https://openssl.org/source/openssl-#{pkg.get_version}.tar.gz"
-  pkg.mirror "#{settings[:buildsources_url]}/openssl-#{pkg.get_version}.tar.gz"
 
   #############
   # ENVIRONMENT
@@ -14,7 +13,7 @@ component 'openssl' do |pkg, settings, platform|
   if platform.is_el? && platform.is_fips?
     pkg.build_requires 'perl-core'
 
-    pkg.environment 'PATH', '/opt/pl-build-tools/bin:$(PATH):/usr/local/bin'
+    pkg.environment 'PATH', '$(PATH):/usr/local/bin'
 
     target = 'linux-x86_64'
   elsif platform.is_windows?
