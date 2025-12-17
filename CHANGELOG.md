@@ -1,6 +1,14 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [2025.12.17.1](https://github.com/openvoxproject/openssl-fips/tree/2025.12.17.1) (2025-12-17)
+
+[Full Changelog](https://github.com/openvoxproject/openssl-fips/compare/202409160...2025.12.17.1)
+
+**Merged pull requests:**
+
+- Openvox updates [\#1](https://github.com/OpenVoxProject/openssl-fips/pull/1) ([nmburgan](https://github.com/nmburgan))
+
 ## [202409160](https://github.com/openvoxproject/openssl-fips/tree/202409160) (2024-09-16)
 
 [Full Changelog](https://github.com/openvoxproject/openssl-fips/compare/202408280...202409160)
