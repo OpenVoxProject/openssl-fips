@@ -1,6 +1,3 @@
-# NOTE: Even though this action exists, we still need to figure out how to
-# build this with FIPS enabled on a GitHub runner, so don't use this to build
-# an actual FIPS agent just yet.
 ---
 name: Build openssl-fips
 
