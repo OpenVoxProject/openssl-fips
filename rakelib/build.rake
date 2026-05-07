@@ -3,7 +3,7 @@ require 'fileutils'
 namespace :vox do
   desc 'Build vanagon project with Docker'
   task :build, [:project, :platform] do |_, args|
-    args.with_defaults(project: 'agent-runtime-main')
+    args.with_defaults(project: 'openssl-fips')
     project = args[:project]
 
     ENV['SOURCE_DATE_EPOCH'] ||= `git log -1 --format=%ct`.chomp
