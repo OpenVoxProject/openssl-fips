@@ -1,7 +1,15 @@
 name: 'Prepare Release'
 
 on:
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      branch:
+        description: 'The branch to release from.'
+        type: choice
+        options:
+          - main
+          - '8.x'
+        default: 'main'
 
 permissions: {}
 
@@ -15,6 +23,7 @@ jobs:
         uses: actions/checkout@v6
         with:
           fetch-depth: 0
+          ref: ${{ inputs.branch }}
 
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
@@ -34,6 +43,7 @@ jobs:
     uses: OpenVoxProject/shared-actions/.github/workflows/prepare_release.yml@main
     with:
       version: ${{ needs.get_version.outputs.version }}
+      base-branch: ${{ inputs.branch }}
     secrets:
       github_pat: ${{ secrets.OPENVOXBOT_COMMIT_AND_PRS }}
       ssh_private_key: ${{ secrets.OPENVOXBOT_SSH_PRIVATE_KEY }}
