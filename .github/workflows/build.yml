@@ -24,6 +24,13 @@ on:
         required: false
         type: string
         default: 'main'
+      branch:
+        description: 'The release branch to build from.'
+        type: choice
+        options:
+          - main
+          - '8.x'
+        default: 'main'
       upload_to_s3:
         description: 'Whether to upload the built artifacts to S3. If false, the artifacts will only be uploaded as workflow artifacts.'
         required: false
@@ -44,6 +51,7 @@ jobs:
       project_name: ${{ inputs.project_name }}
       platform_list: ${{ inputs.platform_list }}
       vanagon_branch: ${{ inputs.vanagon_branch }}
+      branch: ${{ inputs.branch }}
       upload_to_s3: ${{ inputs.upload_to_s3 }}
     secrets: inherit
   build_dev:
@@ -54,5 +62,6 @@ jobs:
       project_name: ${{ inputs.project_name }}
       platform_list: ${{ inputs.platform_list }}
       vanagon_branch: ${{ inputs.vanagon_branch }}
+      branch: ${{ inputs.branch }}
       upload_to_s3: ${{ inputs.upload_to_s3 }}
     secrets: inherit
