@@ -1,6 +1,19 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [2026.10.05.1](https://github.com/openvoxproject/openssl-fips/tree/2026.10.05.1) (2026-10-05)
+
+[Full Changelog](https://github.com/openvoxproject/openssl-fips/compare/2025.12.17.1...2026.10.05.1)
+
+**Merged pull requests:**
+
+- Update OpenSSL to 3.0.22 [\#9](https://github.com/OpenVoxProject/openssl-fips/pull/9) ([nmburgan](https://github.com/nmburgan))
+- Add redhatfips-10-x86\_64 platform [\#7](https://github.com/OpenVoxProject/openssl-fips/pull/7) ([nmburgan](https://github.com/nmburgan))
+- Changes to prepare for 8.x branching [\#6](https://github.com/OpenVoxProject/openssl-fips/pull/6) ([nmburgan](https://github.com/nmburgan))
+- Bug fixes [\#5](https://github.com/OpenVoxProject/openssl-fips/pull/5) ([nmburgan](https://github.com/nmburgan))
+- Modify S3 copy command to suppress progress output [\#4](https://github.com/OpenVoxProject/openssl-fips/pull/4) ([corporate-gadfly](https://github.com/corporate-gadfly))
+- Remove comment about FIPS builds [\#3](https://github.com/OpenVoxProject/openssl-fips/pull/3) ([nmburgan](https://github.com/nmburgan))
+
 ## [2025.12.17.1](https://github.com/openvoxproject/openssl-fips/tree/2025.12.17.1) (2025-12-17)
 
 [Full Changelog](https://github.com/openvoxproject/openssl-fips/compare/202409160...2025.12.17.1)
