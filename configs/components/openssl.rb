@@ -1,6 +1,6 @@
 component 'openssl' do |pkg, settings, platform|
-  pkg.version '3.0.18'
-  pkg.sha256sum 'd80c34f5cf902dccf1f1b5df5ebb86d0392e37049e5d73df1b3abae72e4ffe8b'
+  pkg.version '3.0.22'
+  pkg.sha256sum '67ebca7e50d17383028045486653492195b83db95f8558709701bb47b5c1ef81'
 
   pkg.url "https://openssl.org/source/openssl-#{pkg.get_version}.tar.gz"
 
