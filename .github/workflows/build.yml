@@ -16,7 +16,7 @@ on:
         default: 'openssl-fips'
       platform_list:
         description: 'A comma-separated list of platforms to build for. Do not include spaces. If not provided, will use the default list of FIPS platforms supported by OpenVox.'
-        default: 'redhatfips-8-x86_64,redhatfips-9-x86_64'
+        default: 'redhatfips-8-x86_64,redhatfips-9-x86_64,redhatfips-10-x86_64'
         required: false
         type: string
       vanagon_branch:
